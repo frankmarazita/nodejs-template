@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> head}}
+</head>
+
+<body>
+    {{>header}}
+
+    <main role="main">
+
+        {{!-- Banner --}}
+        <section class="jumbotron pt-5 pb-4 text-center">
+            <div class="container">
+                <h2>Welcome</h2>
+                <p class="lead text-muted">This is some sample home page text for the Node.js Template.</p>
+                <p>
+                    <a href="/button" class="btn btn-primary my-2">Primary</a>
+                    <a href="/button" class="btn btn-secondary my-2">Secondary</a>
+                </p>
+            </div>
+        </section>
+
+        {{!-- Card Display --}}
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+
+                    {{!-- Card --}}
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <h4>Title</h4>
+                                <p class="card-text" style="text-align: justify;">Note</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/view'">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/edit'">Edit</button>
+                                    </div>
+                                    <small class="text-muted">0</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{!-- Add Card --}}
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <h4>Add New</h4>
+                                <p class="card-text" style="text-align: justify;"></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary"
+                                            onclick="location.href='/add'">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    {{>footer}}
+</body>
+
+</html>
